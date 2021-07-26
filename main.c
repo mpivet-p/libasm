@@ -15,7 +15,9 @@ int		main(void)
 	//printf("%d\n", ft_strcmp("Phrase de tet", "Phrase de test"));
 	//printf("%d\n", strcmp("Phrase de tet", "Phrase de test"));
 	//ft_write(1, "123456789\n", 10);
-	ft_write(1, "123456789\n", 10);
+	//ft_write(1, "123456789\n", 10);
 	//write(1, "123456789\n", 10);
+    ret = ft_strdup("Test");
+    printf("%s %p\n", ret, ret);
 	return (0);
 }
