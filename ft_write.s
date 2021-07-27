@@ -8,13 +8,11 @@ ft_write:
 	syscall
 	cmp		rax, 0
 	jge		end
-
-error:
 	neg		rax
 	mov		rdi, rax
 	call		__errno_location
 	mov		[rax], rdi
-	mov		rax, -1
+	mov		eax, -1
 
 end:
 	ret
